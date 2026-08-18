@@ -1,0 +1,50 @@
+int main(int argc, char *argv[]) {
+		int n, res;
+	int bit_64, bit_32,bit_16,bit_8,bit_4,bit_2,bit_1;
+	
+	printf ("Insira o valor a ser convertido:");
+	scanf("%d",&n);
+	
+	bit_64 = n%2;																							
+	res = n/2;
+	
+	bit_32 = n%2;
+	res = res/2;
+	
+	bit_16 = n%2;
+	res = res/2;
+	
+	bit_8 = n%2;
+	res = res/2;
+	
+	bit_4 = n%2;
+	res = res/2;
+	
+	bit_2 = res%2;
+	res = res/2;
+	
+	
+	printf("o numero %d em bin = %d%d%d%d%d%d%d", n, res%2, bit_2, bit_4, bit_8, bit_16, bit_32, bit_64);
+	
+	// exercicio 8 //
+	
+	int x1, x2, y1, y2;
+	float dis;
+	
+	printf("insira o valor do par ordenado p1(x1,y1): ");
+	scanf("%d",&x1);
+	scanf("%d",&y1);
+	
+	printf("insira o valor do par ordenado p2(x2,y2): ");
+	scanf("%d",&x2);
+	scanf("%d",&y2);
+	
+	P1 = pow(x2-x1,2);
+	P2 = pow(y2-y1,2);
+	
+	dist = sqrt(p1+p2);
+	
+	printf("a distancia entre p1 e p2 = %f", dis);
+	
+	
+	printf("\n\nLeitura: (%d,%d)", x1, x2);
