@@ -1,0 +1,19 @@
+	float dola, real, cota;
+	scanf("%f" , &real);
+	scanf("%f" , &cota);
+	printf("%f reais são %f dolinhos" , real, (real/cota));
+	
+	
+	float tempC, tempF;
+	scanf("%f" , tempC);
+	tempF = tempC *(9.0/5.0) + 32.0;
+	print("A temperatura maxima de hoje na tela da globo %f" , tempF);
+	
+	
+	int segundos, horas, minutos;
+	scanf("%f" , &segundos);
+	horas = segundos%3600;
+	minutos = (segundos-(horas*3600))/60;
+	segundos = segundos-((horas*3600)+(minutos*60));
+	printf("Tempo %d:%d:%d" , horas, minutos, segundos);
+	return 0;
